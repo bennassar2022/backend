@@ -13,7 +13,7 @@ exports.create = async (req, res, next) => {
      let filesArray =[];
      req.files.forEach(element => {
       const file= {
-      path: "http://192.168.1.15:3000/" + element.path,
+      path: "http://192.168.1.15:3000/uploads/"+element.filename,
       }
     //  console.log(element.path) ;
       filesArray.push(file);
