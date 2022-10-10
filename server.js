@@ -53,7 +53,7 @@ app.use('/auth', authRoute);
 app.use("/api", PlaceRouter);
 app.use("/api", programRouter);
 
-
-app.listen(3000, () => {
+const PORT= process.env.PORT || 3000;
+app.listen(PORT, () => {
     console.log("server  is working");
 })
